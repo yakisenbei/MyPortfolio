@@ -1,0 +1,193 @@
+  body {
+    background-color: #272727;
+    padding: 10px;
+  }
+
+  .buttons {
+    margin: 1px;
+    font-size:0;
+    line-height:0;
+  }
+
+  .fakeButtons {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    background-color: #ff3b47;
+    border-color: #9d252b;
+    display: inline-block;
+  }
+  
+  .fakeMinimize {
+    left: 11px;
+    background-color: #ffc100;
+    border-color: #9d802c;
+  }
+  
+  .fakeZoom {
+    left: 16px;
+    background-color: #00d742;
+    border-color: #049931;
+  }
+  
+  .fakeMenu {
+    width: 90%;
+    box-sizing: border-box;
+    height: 25px;
+    background-color: #bbb;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .fakeScreen {
+    background-color: #151515;
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .line {
+    color: green;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+
+  .lineAct {
+    color: green;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+  /*外枠*/
+  .portfolio {
+    color: green;
+    border: 1px solid green;
+    display: none;
+    height: 95%;
+  }
+  
+  .portfolioSection {
+    color: green;
+    border: 1px solid #008000;
+    height: 94.5%;
+    width: 100%;
+    display: none; /* 初期状態は非表示 */
+    /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+    -ms-overflow-style: none;
+    /*Firefoxへの対応*/
+    scrollbar-width: none;
+  }
+
+  .selectButton {
+    font-size: 32px;
+    width: 50%;
+    padding: 1px;
+    background-color: #000;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+
+  .selectInSelectButton {
+    font-size: 48px;
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+    background-color: #000;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+
+  .contents_box::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*myworkの中身*/
+
+
+  .infoText {
+    font-size: 0.6em; 
+    margin: 1px;
+    padding: 1px;
+    animation: type .5s 1s steps(20, end) forwards;
+  }
+
+  .firstColumn {
+    width: 50%;
+    height: 100%;
+  }
+
+  .homeContent {  
+    margin: 2px;
+    border: 1px solid green; 
+    border-radius: 0; 
+    padding: 1px;
+    font-size: 48px;    
+    text-align: center;
+    justify-content: center;
+    height: 99%;
+    width: 100%;
+  }
+
+  .profileImage {
+    display: block; 
+    margin: 1px;
+    border: 1px solid green; 
+    border-radius: 0; 
+    padding: 1px;
+    width: 99%;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(44%) saturate(5506%) hue-rotate(104deg) brightness(89%) contrast(103%);
+  }
+
+  .myworkImage {
+    display: block; 
+    border-radius: 0; 
+    padding: 1px;
+    border: 1px solid green;
+    height: 40%;
+    width: 40%;
+  }
+
+  .techBox {
+    display: flex;
+  }
+
+  .gBack { 
+    filter: brightness(0) saturate(100%) invert(26%) sepia(44%) saturate(5506%) hue-rotate(104deg) brightness(89%) contrast(103%);
+  }
+
+  .portfolioImageInfo {
+    margin: 10px;
+    font-size: 32px;
+  }
+
+
+  .img-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .img-wrap::before {
+    animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    background: #151515;
+    content: '';
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  @keyframes img-wrap {
+    100% {
+      transform: translateX(100%);
+    }
+  }
