@@ -70,7 +70,6 @@
   /*外枠*/
   .portfolio {
     color: green;
-    border: 1px solid green;
     display: none;
     height: 95%;
   }
@@ -116,7 +115,7 @@
 
 
   .infoText {
-    font-size: 0.6em; 
+    font-size: 1.5vw; 
     margin: 1px;
     padding: 1px;
     animation: type .5s 1s steps(20, end) forwards;
@@ -145,7 +144,7 @@
     border: 1px solid green; 
     border-radius: 0; 
     padding: 1px;
-    width: 99%;
+    width: 100%;
     filter: brightness(0) saturate(100%) invert(26%) sepia(44%) saturate(5506%) hue-rotate(104deg) brightness(89%) contrast(103%);
   }
 
